@@ -42,6 +42,7 @@ describe('/api/post api tests', function () {
                     });
         });
         it('should return posts with right fields', function() {
+            // bug here
             return chai.request(app)
                     .get('/api/post')
                     .then(function(res) {
