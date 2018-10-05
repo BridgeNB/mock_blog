@@ -18,11 +18,11 @@ describe('/api/post api tests', function () {
 
     beforeEach(function() {
         return createMockDatabase();
-    })
+    });
 
     afterEach(function() {
         return deleteMockDatabase();
-    })
+    });
 
     describe('Read/Get posts', function() {
         it('should return all existing posts', function () {
